@@ -7,7 +7,7 @@ class Test1 extends React.Component {
         console.log(props);
         super();
         this.state = {
-            s1: 0
+            s1: props.arg
         }
     }
 
