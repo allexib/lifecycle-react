@@ -7,7 +7,7 @@ class Test1 extends React.Component {
         console.log(props);
         super();
         this.state = {
-            s1: props.arg
+            s1: 0
         }
     }
 
@@ -16,6 +16,11 @@ class Test1 extends React.Component {
         let val = this.state.s1;
         val++;
         this.setState({ s1 : val});
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        console.log('get derived state');
+        return null;
     }
 
     render() {
