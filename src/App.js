@@ -5,7 +5,7 @@ import React from 'react';
 function App() {
     return (
         <>
-            <Test1/>
+            <Test1 arg={77}/>
         </>
     );
 }

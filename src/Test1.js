@@ -1,9 +1,10 @@
 import React from 'react';
 
 class Test1 extends React.Component {
-    constructor() {
+    constructor(props) {
         console.clear();
         console.log('constructor');
+        console.log(props);
         super();
         this.state = {
             s1: 0
